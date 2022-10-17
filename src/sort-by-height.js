@@ -24,7 +24,7 @@ function sortByHeight( arr ) {
             numberArr.push(arr[i]);
           }
         }
-        numberArr.sort();
+        numberArr.sort((a,b) => a - b);
       
         for (let i = 0; i < indexes.length; i++) {
           numberArr.splice(indexes[i], 0, -1);
